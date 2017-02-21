@@ -1,0 +1,5 @@
+programming 10 2 5 4 3 1 0 2 5 5 4
+mechatronics 5 3 4 4 5 0 
+databases 3 1 2 1 
+logistics 6 3 5 6 1 2 5
+chemistry 4 5 2 4 5
