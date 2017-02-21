@@ -20,6 +20,7 @@ typedef struct place{
 	char member[MAX_NUMBER][20];
 	char name[20];
 	int size;
+	//employee members[MAX_NUMBER][MAX];
 }place;
 
 void sort(employee staff[],int number);
@@ -29,6 +30,7 @@ int strcmpi(char* s1, char* s2);
 int main(void){
 	employee staff[MAX_NUMBER];
 	place cities[MAX_NUMBER];
+	int all=0;
 	int i=0;
 	int numberOfCities=0;
 	char choice[MAX];
@@ -41,7 +43,7 @@ int main(void){
 		exit(1);
 	}
 	while(fscanf(fp,"%d %s %s %s", &staff[i].id,staff[i].first,staff[i].last,staff[i].city) == 4){
-		
+		all++;
 		int j;
 		int index=-1;
 		
@@ -73,7 +75,10 @@ int main(void){
 	}
 	*/
 	
-	printf("Enter city name: ");
+	//sort
+	//sort(staff,all);
+	
+	printf("Enter city name: (not case sensitive)\n");
 	scanf("%s",choice);
 	int index=-1;
 	for(i=0;i<numberOfCities;i++){
@@ -83,10 +88,12 @@ int main(void){
 		}
 	}
 	if(index>=0){
+		//sort(cities[index].member,cities[index].size);
 		printf("City %s has %d members\n",cities[index].name,cities[index].size+1);
 		for(i=0;i<cities[index].size;i++){
 			printf("%s ",cities[index].member[i]);
 		}
+		printf("\n");
 	}else{
 		printf("City %s could not be found\n",choice);
 	}
@@ -97,7 +104,21 @@ int main(void){
 }
 
 void sort(employee staff[],int number){
+	int i,j;
 	
+	for(i=0;i<number;i++){
+		for(j=i+1;j<number;j++){
+			if(strcmp(staff[i].last,staff[j].last)>0){
+				staff[number+1]=staff[i];
+				staff[i]=staff[j];
+				staff[j]=staff[number+1];
+			}
+		}
+	}
+	for(i=0;i<number;i++){
+		printf("%s\n",staff[i].last);
+	}
+	printf("Now everything is sorted... BOOM\n");
 }
 void partialSearch(place cities[],int number){
 	char choice[MAX];
@@ -107,6 +128,7 @@ void partialSearch(place cities[],int number){
 	printf("Enter city name: ");
 	scanf("%s",choice);
 	for(i=0;i<number;i++){
+
 		if(strstr(cities[i].name,choice)!=NULL){
 			printf("City %s has %d members\n",cities[i].name,cities[i].size+1);
 			count++;
