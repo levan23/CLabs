@@ -54,7 +54,7 @@ int main(void){
 	
 	return 0;
 }
-
-
+void retu(struct all){
+}
 	
 	
