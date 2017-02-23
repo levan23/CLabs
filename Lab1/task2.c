@@ -8,8 +8,8 @@ int main(void){
 	int array[10];
 	int i,N;
 	int *smallest,*greatest;
-	int *parray;
-	parray=array;
+	//int *parray;
+	//parray=array;
 	
 	printf("enter number of elements\n");
 	scanf("%d",&N);
@@ -17,21 +17,21 @@ int main(void){
 	printf("enter %d elements of array\n",N);
 	
 	for(i=0;i<N;i++){
-		scanf("%d",parray+i);
+		scanf("%d",array+i);
 	}
 	
 	for(i=0;i<N;i++){
-		printf("%d -> %p\n",*(parray+i),(parray+i));
+		printf("%d -> %p\n",*(array+i),(array+i));
 	}
 	smallest = array;
 	greatest = array;
 	
 	for(i=0;i<N;i++){
-		if(*(parray+i)<*smallest){
-			smallest=(parray+i);
+		if(*(array+i)<*smallest){
+			smallest=(array+i);
 		}
-		if(*(parray+i)>*greatest){
-			greatest=(parray+i);
+		if(*(array+i)>*greatest){
+			greatest=(array+i);
 		}
 	}
 	printf("Greatest %d -> %p\n",*greatest,greatest);

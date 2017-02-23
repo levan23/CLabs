@@ -48,7 +48,7 @@ int main(void){
 		int index=-1;
 		
 		for(j=0;j<numberOfCities;j++){
-			if(strcmp(cities[j].name,staff[i].city)==0){
+			if(strwhilcmp(cities[j].name,staff[i].city)==0){
 				index=j;
 			}
 		}

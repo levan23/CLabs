@@ -5,7 +5,7 @@
 #include <stdbool.h>
 
 #define MAX 20
-#define MAX_SIZE 200000
+#define MAX_SIZE 220
 #define INPUT_FILE "data_short.txt"
 //#define INPUT_FILE "data_long.txt"
 

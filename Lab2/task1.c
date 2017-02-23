@@ -20,8 +20,6 @@ int main(void){
 		}
 	}
 	fclose(pRead);
-	fflush(pEven);
-	fflush(pOdd);
 	fclose(pEven);
 	fclose(pOdd);
 	return 0;

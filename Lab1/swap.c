@@ -19,10 +19,10 @@ int main(void)
     //int x = 10;
     //int y=150;
     printf("Original values:\t  x=%2d and y=%2d\n", x, y);
-	int *xp=&x;
-	int *yp=&y;
+//	int *xp=&x;
+	//int *yp=&y;
     // Call your function to swap the numbers
-	swap(xp,yp);
+	swap(&x,&y);
     // here we should see the switched values
     printf("New: \t\t\t  x=%2d and y=%2d\n", x, y);
     return 0;

@@ -19,7 +19,7 @@ typedef struct subjects{
 
 int main(void){
 	
-	subjects all[MAX_SUBJECTS];
+	struct subjects all[MAX_SUBJECTS];
 	
 	//Read from file
 	FILE *fp = fopen(INPUT_FILE, "r");
@@ -53,8 +53,6 @@ int main(void){
 	}
 	
 	return 0;
-}
-void retu(struct all){
 }
 	
 	
