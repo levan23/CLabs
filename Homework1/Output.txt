@@ -1,4 +1,4 @@
-Elon Mask	 Phone: 163 Win: 65 Lose: 38 Win-Lose ratio: 0.585
-Pep Guardiola	 Phone: 264 Win: 42 Lose: 8 Win-Lose ratio: 0.190
-Jim Carrey	 Phone: 100 Win: 75 Lose: 2 Win-Lose ratio: 0.027
-Steve Jobs	 Phone: 134 Win: 32 Lose: 1 Win-Lose ratio: 0.031
+George Bush	 Phone: 163 Win: 650 Lose: 380 Win-Lose ratio: 0.585
+Donald Trump	 Phone: 100 Win: 750 Lose: 200 Win-Lose ratio: 0.267
+John Lennon	 Phone: 264 Win: 420 Lose: 80 Win-Lose ratio: 0.190
+Bob Marley	 Phone: 134 Win: 320 Lose: 10 Win-Lose ratio: 0.031

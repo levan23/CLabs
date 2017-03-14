@@ -1,0 +1,14 @@
+ID: 1 Average:11.30 Maximum:23.10 Total:9.48 Time: 0:50:20
+ID: 2 Average:16.90 Maximum:31.20 Total:13.80 Time: 0:49:0
+ID: 3 Average:20.10 Maximum:28.90 Total:21.89 Time: 1:5:20
+ID: 4 Average:12.10 Maximum:19.20 Total:17.48 Time: 1:26:41
+ID: 8 Average:14.00 Maximum:17.90 Total:26.91 Time: 1:55:20
+ID: 9 Average:16.90 Maximum:21.40 Total:3.47 Time: 0:12:20
+ID: 10 Average:15.90 Maximum:19.20 Total:19.57 Time: 1:13:50
+ID: 11 Average:18.10 Maximum:23.10 Total:3.32 Time: 0:11:0
+ID: 13 Average:14.90 Maximum:22.00 Total:14.98 Time: 1:0:20
+ID: 15 Average:20.10 Maximum:26.90 Total:8.15 Time: 0:24:20
+ID: 16 Average:16.20 Maximum:19.50 Total:31.50 Time: 1:56:39
+ID: 17 Average:16.00 Maximum:21.80 Total:19.77 Time: 1:14:9
+Total Time: 12.32 hours
+Total Kilometers driven: 19.77

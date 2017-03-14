@@ -1,8 +1,8 @@
 /**
  * File:	HW_I_Levan_Salia_145368.c
- * Author:	Levan_Salia
+ * Author:	Levan Salia
  * Created:	04.03.2017
- * Edited:	04.03.2017
+ * Edited:	05.03.2017
  * 
  * Description: Solution for Homework N1
  */
@@ -63,7 +63,6 @@ int calculateAverage(person *persons){
 	for(i=0;i<SIZE;i++){
 		sum+=(persons+i)->win-(persons+i)->lose;
 	}
-	
 	return sum;
 }
 
@@ -75,6 +74,10 @@ int calculateAverage(person *persons){
 void Output(person *persons,int average){
 	int i,j;
 	FILE *pWrite=fopen("Output.txt","w");
+	if(pWrite==NULL){
+		perror("Error creating Output.txt");
+		exit(1);
+	}
 	person temp;
 	for(i=0;i<SIZE;i++){
 		for(j=i+1;j<SIZE;j++){
